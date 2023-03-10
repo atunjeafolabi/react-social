@@ -6,7 +6,7 @@ export const Register = () => {
     <div className="register">
         <div className="card">
             <div className="left">
-                <h1>Hello World.</h1>
+                <h1>React Social</h1>
                 <p>
                     Lorem, ipsum dolor sit amet consectetur adipisicing elit. Modi laborum quo porro. 
                     Nam illo ipsam, earum culpa cupiditate ratione voluptatem facilis. Omnis dignissimos 
@@ -20,7 +20,7 @@ export const Register = () => {
                 </Link>
             </div>
             <div className="right">
-                <h1>Login</h1>
+                <h1>Register</h1>
                 <form action="">
                     <input type="text" placeholder="Username"/>
                     <input type="text" placeholder="Password"/>
