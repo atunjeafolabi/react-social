@@ -1,9 +1,9 @@
 import {Link} from "react-router-dom";
-import "./login.scss";
+import "./register.scss";
 
-export const Login = () => {
+export const Register = () => {
   return (
-    <div className="login">
+    <div className="register">
         <div className="card">
             <div className="left">
                 <h1>Hello World.</h1>
@@ -15,8 +15,8 @@ export const Login = () => {
                 <span>
                     Don't you have an account?
                 </span>
-                <Link to={"/register"}>
-                <button>Register</button>
+                <Link to={"/login"}>
+                    <button>Login</button>
                 </Link>
             </div>
             <div className="right">
@@ -24,7 +24,7 @@ export const Login = () => {
                 <form action="">
                     <input type="text" placeholder="Username"/>
                     <input type="text" placeholder="Password"/>
-                    <button>Login</button>
+                    <button>Register</button>
                 </form>
             </div>
         </div>
@@ -32,4 +32,4 @@ export const Login = () => {
   )
 }
 
-export default Login;
+export default Register;
