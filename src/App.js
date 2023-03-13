@@ -13,7 +13,7 @@ import { DarkModeContext } from "./context/darkModeContext";
 function App() {
   const Layout = () => {
     const { darkMode } = useContext(DarkModeContext);
-    console.log(darkMode);
+
     return (
       <div className={`theme-${darkMode ? "dark" : "light"}`}>
         <Navbar />
