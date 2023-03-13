@@ -1,53 +1,61 @@
+@import "../../style.scss";
+
 .navbar {
+  @include themify($themes) {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
-    border-bottom: 1px solid lightgray;
-    background-color: white;
+    border-bottom: 1px solid themed("border");
+    background-color: themed("bg");
     position: sticky;
     top: 0;
+    color: themed("textColor");
+    height: 50px;
 
     .left {
+      display: flex;
+      gap: 30px;
+
+      span {
+        font-weight: bold;
+        font-size: 20px;
+        color: themed("logo");
+      }
+
+      .search {
         display: flex;
-        gap: 30px;
+        align-items: center;
+        border-radius: 5px;
+        border: 1px solid themed("border");
 
-        span {
-            font-weight: bold;
-            font-size: 20px;
-            color: darkblue;
+        input {
+          border: none;
+          width: 500px;
+          background-color: transparent;
+          color: themed("textColor");
         }
-
-        .search {
-            display: flex;
-            align-items: center;
-            border-radius: 5px;
-            border: 1px solid lightgray;
-            
-            input {
-                border: none;
-                width: 500px;
-            }
-        }
+      }
     }
 
     .right {
-       display: flex;
-       gap: 20px;
-        .user {
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            img {
-                width: 30px;
-                height: 30px;
-                border-radius: 50%;
-                object-fit: cover;
-            }
+      display: flex;
+      gap: 20px;
 
-            span {
-
-            }
+      .user {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        img {
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          object-fit: cover;
         }
+
+        span {
+        }
+      }
     }
+  }
 }
