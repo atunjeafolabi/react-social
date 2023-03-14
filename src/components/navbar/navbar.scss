@@ -12,6 +12,7 @@
     top: 0;
     color: themed("textColor");
     height: 50px;
+    z-index: 99;
 
     .left {
       display: flex;
