@@ -2,7 +2,7 @@ import React, { useContext } from "react";
 import { AuthContext } from "../../context/authContext";
 import "./stories.scss";
 
-export const Stories = () => {
+const Stories = () => {
   const { currentUser } = useContext(AuthContext);
   //TEMPORARY
   const stories = [
@@ -49,3 +49,5 @@ export const Stories = () => {
     </div>
   );
 };
+
+export default Stories;
