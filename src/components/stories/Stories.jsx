@@ -39,7 +39,7 @@ export const Stories = () => {
       </div>
       {stories.map((story) => {
         return (
-          <div className="story">
+          <div className="story" key={story.id}>
             <img src={story.img} alt="" />
             <span>
               <div></div>
