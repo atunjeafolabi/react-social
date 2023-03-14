@@ -32,10 +32,8 @@ export const Stories = () => {
     <div className="stories">
       <div className="story">
         <img src={currentUser.profilePic} alt="" />
-        <span>
-          <button>+</button>
-          {currentUser.name}
-        </span>
+        <span>{currentUser.name}</span>
+        <button>+</button>
       </div>
       {stories.map((story) => {
         return (
