@@ -2,10 +2,14 @@
 
 A quick social media UI design with light/dark theme switching.
 
-## Tech
+### Tech
 
 - React
 - SCSS
+
+### Preview
+
+![Screenshot](screenshots/react-social-preview.png)
 
 ### Credits
 
